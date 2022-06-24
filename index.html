@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="Julia Pirogova">
+    <meta name="keywords" content="timer, fetch">
+    <meta name="description" content="siteWithAPI: openweathermap.org">
+    <title>Timer</title>
+    <link rel='stylesheet' href='styles/style.css'> 
+    <title>Weather</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="loading">Loading...</div>
+    </div>
+    <script src="scripts/script.js"></script>
+    
+    <script type="text/javascript" src="scripts/vanilla-tilt.min.js"></script>
+    <script type="text/javascript">
+        VanillaTilt.init(document.querySelector(".wrapper"), {
+            max: 10,
+            speed: 200,
+            glare: true,
+            reverse: true
+        });
+        
+        //It also supports NodeList
+        VanillaTilt.init(document.querySelectorAll(".wrapper"));
+    </script>
+</body>
+</html>
